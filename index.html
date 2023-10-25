@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HSL Colors</title>
+
+
+    <style>
+        /*---------------------
+        HSL COLORS
+        A short demo/exercise to show the power of HSL color coding in CSS.
+        Enno Hyttrek
+        Version: 1.0
+        ---------------------*/
+        
+        
+        /*---------------------
+        BASIC VARIABLES
+        ---------------------*/
+
+        :root {
+            --color-base: 200;
+            --color-saturation: 21%;
+        }
+
+        /*---------------------
+        LAYOUT
+        ---------------------*/
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            grid-gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+        }
+
+        /*---------------------
+        TYPOGRAPHY
+        ---------------------*/
+
+        h2 {
+            width: 100%
+        }
+
+
+        /*---------------------
+        BASIC COLORS
+        ---------------------*/
+
+        section div:nth-child(2) {
+            background: hsl(var(--color-base), var(--color-saturation), 13%);
+        }
+
+        section div:nth-child(3) {
+            background: hsl(var(--color-base), var(--color-saturation), 34%);
+        }
+
+        section div:nth-child(4) {
+            background: hsl(var(--color-base), var(--color-saturation), 55%);
+        }
+
+        section div:nth-child(5) {
+            background: hsl(var(--color-base), var(--color-saturation), 76%);
+        }
+
+        section div:nth-child(6) {
+            background: hsl(var(--color-base), var(--color-saturation), 97%);
+        }
+
+        /*---------------------
+        COLORS VARIATIONS
+        ---------------------*/
+
+
+        section:nth-child(3) {
+            --color-base: 190;
+            --color-saturation: 18%;
+        }
+
+        section:nth-child(4) {
+            --color-base: 220;
+            --color-saturation: 21%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1>HSL Colors</h1>
+
+    <section>
+
+        <h2>Basic Colors</h2>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Color Variation 1</h2>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+    </section>
+
+    <section>
+
+        <h2>Color Variation 2</h2>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+        <div>
+
+        </div>
+
+    </section>
+
+</body></html>
